@@ -1,0 +1,96 @@
+:root {
+    --ightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+--DarkGrayishBlue: hsl(217, 19%, 24%);
+--DarkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--DarkBlue);
+    font-family: 'Manrope', sans-serif;
+}
+.wrapper {
+    justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+.wrapper-2 {
+    border-radius: 15px;
+    width: 500px;
+    background-color: var(--DarkGrayishBlue);
+    padding: 20px;
+}
+
+.font-atas {
+    color: var(--NeonGreen);
+}
+
+p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fontAd {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.border img {
+    position: relative;
+    top: 12px;
+}
+.border {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--NeonGreen);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40px;
+    transition: 0.5s;
+}
+
+.border:hover {
+    background-color: hsl(150, 49%, 22%);
+}
+
+.mobile {
+    display: none;
+    width: 100%;
+}
+.mobile ,
+.dekstop {
+    position: relative;
+    top: 10px;
+}
+.dekstop {
+    width: 100%;
+}
+@media screen and (max-width: 500px){
+    .wrapper-2 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .mobile {
+        display: block;
+    }
+
+    .dekstop {
+        display: none;
+    }
+}
+
